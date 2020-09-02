@@ -1,0 +1,26 @@
+.nav-socialmedia {
+    @include flexBox(row);
+    justify-content: space-between;
+}
+
+.line-decoration {
+    display: none;
+}
+
+.nav-socialmedia_logo {
+    display: block;
+    align-items: center;
+}
+
+
+
+.nav-socialmedia_actions {
+    @include flexBox(row);
+    padding-top: 25px;
+}
+
+.nav-socialmedia_action {
+    font-size: 15px;
+    padding: 0 5px;
+    color: $fontFirstColor;
+}

@@ -1,0 +1,9 @@
+@import 'navSocialmedia';
+
+.site-header {
+    padding: $paddingSectionSmall;
+    height: 100vh;
+    background-image: url('/images/header/img1.jpg');
+    @include background(center, no-repeat, cover);
+
+}
