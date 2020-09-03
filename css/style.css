@@ -204,6 +204,10 @@ table {
   background-color: #D1C8BB;
 }
 
+.nav-user {
+  display: none;
+}
+
 .site-header {
   padding: 20px;
   height: 50vh;
