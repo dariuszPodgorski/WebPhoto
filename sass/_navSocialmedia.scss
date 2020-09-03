@@ -3,24 +3,23 @@
     justify-content: space-between;
 }
 
+
+.nav-socialmedia_actions {
+    @include flexBox(row);
+
+}
+
 .line-decoration {
     display: none;
 }
 
-.nav-socialmedia_logo {
-    display: block;
-    align-items: center;
-}
-
-
-
-.nav-socialmedia_actions {
-    @include flexBox(row);
-    padding-top: 25px;
-}
-
 .nav-socialmedia_action {
-    font-size: 15px;
-    padding: 0 5px;
+    font-size: 16px;
     color: $fontFirstColor;
+    padding: 0 7px;
+}
+
+.nav-trigger {
+    color: $fontFirstColor;
+    font-size: 20px;
 }
