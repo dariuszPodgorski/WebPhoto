@@ -17,3 +17,10 @@
         height: 60vh;
     }
 }
+
+@include breakpoint(large) {
+    .site-header {
+        padding: $paddingSectionLarge;
+        height: 65vh;
+    }
+}

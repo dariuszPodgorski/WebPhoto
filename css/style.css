@@ -184,6 +184,18 @@ table {
   }
 }
 
+@media screen and (min-width: 1224px) {
+  .line-decoration {
+    width: 300px;
+    height: 1px;
+    background-color: #D1C8BB;
+    margin-left: -150px;
+  }
+  .nav-socialmedia_action {
+    font-size: 25px;
+  }
+}
+
 .welcome-info_content {
   padding: 70px 0 60px 0;
 }
@@ -263,6 +275,29 @@ table {
   }
 }
 
+@media screen and (min-width: 1224px) {
+  .welcome-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .welcome-info_content {
+    padding: 150px 0 60px 0;
+  }
+  .welcome-info_content h2 {
+    line-height: 60px;
+    letter-spacing: 2px;
+  }
+  .welcome-info_content p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
 .nav-user {
   display: none;
 }
@@ -319,6 +354,13 @@ table {
   }
 }
 
+@media screen and (min-width: 1224px) {
+  .site-header {
+    padding: 60px 150px;
+    height: 65vh;
+  }
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -336,6 +378,12 @@ body h2 {
 @media screen and (min-width: 768px) {
   body h2 {
     font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  body h2 {
+    font-size: 48px;
   }
 }
 /*# sourceMappingURL=style.css.map */

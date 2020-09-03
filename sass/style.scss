@@ -31,3 +31,11 @@ body {
         }
     }
 }
+
+@include breakpoint(large) {
+    body {
+        & h2 {
+            font-size: 48px;
+        }
+    }
+}

@@ -44,3 +44,17 @@
         padding: 0 15px;
     }
 }
+
+@include breakpoint(large) {
+    .line-decoration {
+        width: 300px;
+        height: 1px;
+        background-color: $fontFirstColor;
+        margin-left: -150px;
+    }
+
+    .nav-socialmedia_action {
+        font-size: 25px;
+
+    }
+}
