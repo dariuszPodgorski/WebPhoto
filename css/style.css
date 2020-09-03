@@ -167,12 +167,28 @@ table {
   font-size: 20px;
 }
 
+@media screen and (min-width: 960px) {
+  .nav-trigger {
+    display: none;
+  }
+  .line-decoration {
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #D1C8BB;
+    margin-left: -80px;
+  }
+  .nav-socialmedia_action {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+}
+
 .welcome-info_content {
   padding: 70px 0 60px 0;
 }
 
 .welcome-info_content h2 {
-  font-size: 26px;
   text-align: center;
   line-height: 40px;
   color: #D1C8BB;
@@ -204,8 +220,87 @@ table {
   background-color: #D1C8BB;
 }
 
+@media screen and (min-width: 768px) {
+  .welcome-info_content {
+    padding: 90px 0 60px 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .welcome-info_content h2 {
+    text-align: left;
+  }
+  .welcome-info_content p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 25px;
+    padding-top: 28px;
+  }
+  .welcome-info_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .welcome-info_button .welcome-info_more-button {
+    width: 50%;
+    text-align: left;
+  }
+  .welcome-info_button .welcome-info_line {
+    width: 50%;
+    position: relative;
+  }
+  .welcome-info_button .welcome-info_line .welcome-info_line-decoration {
+    position: absolute;
+    width: 1px;
+    height: 200px;
+    background-color: #D1C8BB;
+    bottom: -50px;
+    right: 0;
+  }
+}
+
 .nav-user {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-user {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-user_actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav-user_actions .nav-user_action {
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+  }
 }
 
 .site-header {
@@ -217,7 +312,30 @@ table {
   background-size: cover;
 }
 
+@media screen and (min-width: 960px) {
+  .site-header {
+    padding: 40px 80px;
+    height: 60vh;
+  }
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
+}
+
+body h2 {
+  font-size: 26px;
+}
+
+@media screen and (min-width: 625px) {
+  body h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body h2 {
+    font-size: 36px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,3 +9,11 @@
     @include background(center, no-repeat, cover);
 
 }
+
+
+@include breakpoint(medium_v2) {
+    .site-header {
+        padding: $paddingSectionMediumV2;
+        height: 60vh;
+    }
+}

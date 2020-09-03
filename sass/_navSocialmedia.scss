@@ -23,3 +23,24 @@
     color: $fontFirstColor;
     font-size: 20px;
 }
+
+
+@include breakpoint(medium_v2) {
+    .nav-trigger {
+        display: none;
+    }
+
+    .line-decoration {
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: $fontFirstColor;
+        margin-left: -80px;
+
+    }
+
+    .nav-socialmedia_action {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+}

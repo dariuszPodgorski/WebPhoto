@@ -2,7 +2,6 @@
     padding: 70px 0 60px 0;
 
     & h2 {
-        font-size: 26px;
         text-align: center;
         line-height: 40px;
         color: $fontFirstColor;
@@ -21,6 +20,8 @@
     }
 }
 
+
+
 .welcome-info_button {
     text-align: center;
 }
@@ -34,5 +35,54 @@
     height: 50px;
     color: $fontSecondColor;
     background-color: $btnFirstColor;
+
+}
+
+@include breakpoint(medium) {
+    .welcome-info_content {
+        padding: 90px 0 60px 0;
+    }
+}
+
+@include breakpoint(medium_v2) {
+
+    .welcome-info_content {
+
+        & h2 {
+            text-align: left;
+        }
+
+        & p {
+            font-size: 16px;
+            text-align: left;
+            line-height: 25px;
+            padding-top: 28px;
+        }
+    }
+
+    .welcome-info_button {
+        @include flexBox(row);
+
+        .welcome-info_more-button {
+            width: 50%;
+            text-align: left;
+
+        }
+
+        .welcome-info_line {
+            width: 50%;
+            position: relative;
+
+            .welcome-info_line-decoration {
+                position: absolute;
+                width: 1px;
+                height: 200px;
+                background-color: $btnFirstColor;
+                bottom: -50px;
+                right: 0;
+            }
+        }
+    }
+
 
 }

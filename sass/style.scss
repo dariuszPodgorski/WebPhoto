@@ -7,4 +7,27 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+
+    & h2 {
+        font-size: 26px;
+    }
+}
+
+
+
+
+@include breakpoint(small_v2) {
+    body {
+        & h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    body {
+        & h2 {
+            font-size: 36px;
+        }
+    }
 }
